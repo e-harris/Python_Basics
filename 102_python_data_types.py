@@ -56,3 +56,8 @@ print(example_long_string.capitalize().strip(' '))
 
 # create a list with individual words
 print(example_long_string.split())
+
+
+# casting to string
+# str(something to become string)
+print(type(str(658365838)))
