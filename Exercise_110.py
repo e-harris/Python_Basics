@@ -12,4 +12,13 @@
 rating = input("""
 Out of the following ratings, how would you rate the film?
 PG, 12, 15, 18
-""")
+> """)
+
+if rating.upper() == "PG":
+    print("You selected PG")
+elif rating == "12":
+    print("You selected 12")
+elif rating == "15":
+    print("You selected 15")
+elif rating == "18":
+    print("You selected 18")
