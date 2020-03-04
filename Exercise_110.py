@@ -9,16 +9,32 @@
   ## 15 --> No one younger than 15 may see a 15 film in a cinema.
   ## 18 --> No one younger than 18 may see an 18 film in a cinema.
 
-rating = input("""
-Out of the following ratings, how would you rate the film?
-PG, 12, 15, 18
-> """)
 
-if rating.upper() == "PG":
-    print("You selected PG")
-elif rating == "12":
-    print("You selected 12")
-elif rating == "15":
-    print("You selected 15")
-elif rating == "18":
-    print("You selected 18")
+
+while True:
+    rating = input("""
+    Out of the following ratings, how would you rate the film?
+    PG, 12, 15, 18
+    > """)
+    if rating.upper() == "PG":
+        print("You selected PG")
+    elif rating == "12":
+        print("You selected 12")
+    elif rating == "15":
+        print("You selected 15")
+    elif rating == "18":
+        print("You selected 18")
+    else:
+        print("That was not one of the selections!")
+        continue
+    confirm = input("""
+    Was this your rating for the film?
+    > """)
+    if "y" in confirm.lower():
+        exit(0)
+    if "n" in confirm.lower():
+        continue
+    else:
+        continue
+
+
