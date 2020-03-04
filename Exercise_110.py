@@ -9,3 +9,7 @@
   ## 15 --> No one younger than 15 may see a 15 film in a cinema.
   ## 18 --> No one younger than 18 may see an 18 film in a cinema.
 
+rating = input("""
+Out of the following ratings, how would you rate the film?
+PG, 12, 15, 18
+""")
