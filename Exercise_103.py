@@ -24,7 +24,7 @@ Skin Colour = {skin_colour}
 """)
 ask = input("Are you happy with these details? Y/N ")
 
-
+print(ask)
 def input_change(ask):
     if ask.upper() == "N":
         print("""
@@ -48,7 +48,7 @@ def input_change(ask):
             eye_colour = input("What would you like your new Eye Colour to be?")
             return eye_colour
         elif ask2.upper == 'SK':
-            skin_colour = input("What would you like your new name to be?")
+            skin_colour = input("What would you like your new Skin Colour to be?")
             return skin_colour
         else:
             return

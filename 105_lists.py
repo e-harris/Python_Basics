@@ -30,3 +30,12 @@ print(cringe_land_l)
 # add item in specific location on list
 cringe_land_l.insert(1, 'Kevin')
 print(cringe_land_l)
+
+# remove last item in a list
+# .pop()
+# number in brackets selects index to remove from end of list
+
+# len
+# index of list/no of items in list
+# starts at 0
+

@@ -3,6 +3,8 @@
 #box = 'contents'
 book = 'Rich dad poor dad'
 
+#constant
+#is a variable but in ALL CAPS
 
 # print function
 print(book)
@@ -16,6 +18,7 @@ print(data_of_book)
 # input function
 # input() - prompt for user input
 # and you can add a string to the argument so it prints out that before capturing the input
+
 
 
 

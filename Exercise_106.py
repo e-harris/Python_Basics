@@ -20,22 +20,24 @@
 
 from random import randint
 
-magic_number = randint(1, 9)
+# magic_number = randint(1, 9)
+magic_number = 2
 
 
 def guess():
     x = 0
-    guess = input("Pick a number between 1 and 10: ")
-    while x < 2:
+    while x < 3:
+        guess = int(input("Pick a number between 1 and 9: "))
         if guess != magic_number:
             x += 1
-            input("Unlucky! Try again! ")
-        elif guess == magic_number:
+            print("Unlucky! Try again! ")
+        if guess == magic_number:
             print("Congratulations!")
             break
-        elif x == 2:
-            return print("Unlucky, no more attempts!")
-
+    if x == 3 and (guess == magic_number):
+        return print("Congratulations")
+    elif x == 3:
+        return print("Unlucky, no more attempts!")
 
 
 
