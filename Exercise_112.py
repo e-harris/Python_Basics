@@ -13,15 +13,19 @@
 
 user_input = input("What number are you thinking of? ")
 while user_input != "penpinapplespen":
+    if user_input == "penpinapplepen":
+        print("goodbye")
+        exit(0)
     for number in range(1, int(user_input) + 1):
         if (int(number) % 3) == 0 and (int(number) % 5) == 0:
-            print(f"{int(number)} bizz zzuu")
+            print(f"{int(number)} bizzzzuu")
         elif number % 3 == 0:
             print(f"{int(number)} bizz")
         elif number % 5 == 0:
             print(f"{int(number)} zzuu")
         else:
             print(number)
-    user_input = input("""
-    
-    Play again?""")
+    user_input = input("Play again? >")
+    if user_input == "penpinapplepen":
+        print("goodbye")
+        exit(0)
