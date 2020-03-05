@@ -11,15 +11,17 @@
     # if a multiple of 5 it return zzuu
     # if a multiple of 3 and 5 it return bizzzzuu
 
-user_input = int(input("What number are you thinking of? "))
-for number in range(1, user_input+1):
-    if (number % 3) == 0 and (number % 5) == 0:
-        print(f"{number} bizz zzuu")
-    elif number % 3 == 0:
-        print(f"{number} bizz")
-    elif number % 5 == 0:
-        print(f"{number} zzuu")
-    else:
-        print(number)
-
-print(20%3)
+user_input = input("What number are you thinking of? ")
+while user_input != "penpinapplespen":
+    for number in range(1, int(user_input) + 1):
+        if (int(number) % 3) == 0 and (int(number) % 5) == 0:
+            print(f"{int(number)} bizz zzuu")
+        elif number % 3 == 0:
+            print(f"{int(number)} bizz")
+        elif number % 5 == 0:
+            print(f"{int(number)} zzuu")
+        else:
+            print(number)
+    user_input = input("""
+    
+    Play again?""")
